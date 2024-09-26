@@ -19,7 +19,9 @@ fun ScrennA(navController: NavController){
         verticalArrangement = Arrangement.Center
     ){
         Text(text = "Sceen A")
-        Button(onClick = {  }) {
+        Button(onClick = {
+            navController.navigate(Routes.screenB)
+        }) {
             Text(text = "Goto Screen B")
             
         }
